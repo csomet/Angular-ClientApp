@@ -1,4 +1,4 @@
-# ClientsApp
+# ClientsApp Angular 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
 Demo App for REST json services between JAVA Spring app and client app (Angular).
@@ -26,3 +26,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## 📝Specs 
+Angular CLI: 6.1.4 / Angular 6.1.3
+Node: 8.11.4
+Atom: 1.30 x64
+
+
+### 👤Author
+Carlos H Somet.
