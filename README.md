@@ -1,6 +1,7 @@
 # ClientsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
+Demo App for REST json services between JAVA Spring app and client app (Angular).
 
 ## Development server
 
