@@ -1,0 +1,40 @@
+<div class="card border-info my-4 mb-3">
+  <div class="card-header">Clients</div>
+    <div class="card-body text-info">
+      <div *ngIf="clients?.length > 0 else elseBlock" >
+        <h5 class="card-title">Clients list</h5>
+
+          <table class="table table-bordered table-striped">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let client of clients">
+              <td>{{ client.id }}</td>
+              <td>{{ client.name }}</td>
+              <td>{{ client.surname }}</td>
+              <td>{{ client.email }}</td>
+              <td>{{ client.createdAt }}</td>
+              <td> <button name="button" class="btn btn-primary btn-xs" type="button" [routerLink]= "['/clients/form', client.id]" >Edit</button> </td>
+              <td> <button name="button" class="btn btn-danger btn-xs" type="button" (click)="delete(client)" >Delete</button> </td>
+            </tr>
+
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <div class="card-body text-info"><h5>No clients yet.</h5></div>
+</ng-template>
